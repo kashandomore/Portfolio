@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="floating-wpp.css">
+    <script type="text/javascript" src="floating-wpp.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-[#282A46]">
+
+    <nav class="nav flex items-center " id="navbar">
+        <div class="logo">
+            <img src="./img/logo.svg" class="w-56 opacity-50" alt="">
+        </div>
+        <div class="links">
+            <ul class="ul opacity-50">
+                <li class="hover-underline-animation" class="li"><a class="a" href="./index.html">Home</a></li>
+                <li class="hover-underline-animation" class="li"><a class="a" href="./portfolio.html">Portfolio</a></li>
+                <li class="hover-underline-animation" class="li"><a class="a" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="btn">
+            <a href="https://www.upwork.com/freelancers/~016ba2fe435f108f7e"><button class="btn1">
+                    <svg width="25" height="21" viewBox="0 0 25 21" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.16667 0C3.0616 0 2.00179 0.442499 1.22039 1.23015C0.438987 2.0178 0 3.08609 0 4.2V4.6221L12.5 11.4072L25 4.6242V4.2C25 3.08609 24.561 2.0178 23.7796 1.23015C22.9982 0.442499 21.9384 0 20.8333 0H4.16667ZM25 7.0077L12.9938 13.524C12.842 13.6063 12.6723 13.6494 12.5 13.6494C12.3277 13.6494 12.158 13.6063 12.0062 13.524L0 7.0077V16.8C0 17.9139 0.438987 18.9822 1.22039 19.7698C2.00179 20.5575 3.0616 21 4.16667 21H20.8333C21.9384 21 22.9982 20.5575 23.7796 19.7698C24.561 18.9822 25 17.9139 25 16.8V7.0077Z"
+                            fill="white" />
+                    </svg>
+
+                    <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+                    </svg>
+                    <span class="text-white">Hire me</span>
+                </button></a>
+        </div>
+        <div class="burger-icon" id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+    </nav>
+    <!-- Side_bar -->
+    <div class="flex w-full fixed top-0 z-[9999999999]">
+        <div id="menu"
+            class="bg-[#22295F] lg:hidden w-1/2 h-screen absolute z-[9999999] fixed top-0 flex justify-center items-center">
+            <ul class="text-center">
+                <li>
+                    <a href="./index.html"
+                        class="hover-underline-animation font-display max-w-sm text-2xl font-bold leading-tight">
+                        <span class="link link-underline link-underline-black text-white">Home</span>
+                    </a>
+                </li>
+                <li class="mt-4">
+                    <a href="./portfolio.html"
+                        class=" hover-underline-animation font-display max-w-sm text-2xl font-bold leading-tight">
+                        <span class="link link-underline link-underline-black text-white">Portfolio</span>
+                    </a>
+                </li>
+                <li class="mt-4">
+                    <a href="./contact.html"
+                        class="hover-underline-animation font-display max-w-sm text-2xl font-bold leading-tight">
+                        <span class="link link-underline link-underline-black text-white">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+    <section class="Contact mt-80">
+        <div class="bg-white lg:flex md:flex-wrap w-full h-full lg:p-12 container mx-auto mt-20 shadow-xl">
+            <div class="lg:w-1/2 p-8">
+                <h1 class="text-3xl font-light mt-20 text-[#25D366] hover-underline-animation">CONTACT</h1>
+                <h1 class="text-2xl font-light text-gray-700 tracking-wide mt-24">I'M A PARAGRAPH. CLICK HERE TO ADD
+                    YOUR OWN
+                    TEXT
+                    AND EDIT ME. IT’S EASY. JUST CLICK “EDIT TEXT” OR DOUBLE
+                    CLICK ME</h1>
+                <h2 class="text-[#25D366] mt-8 text-xl">Ahmadomore@gmail.com</h2>
+                <h2 class="text-[#25D366] mt-4 text-xl">+92 307 4032148</h2>
+            </div>
+            <div class="lg:w-1/2">
+                <div class="mt-20 gap-4 p-8">
+                    <div class="flex gap-4">
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 border px-4 leading-tight focus:outline-none focus:bg-white"
+                            id="grid-first-name" type="text" placeholder="Name">
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 rounded border py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                            id="grid-first-name" type="text" placeholder="Email">
+                    </div>
+                    <input
+                        class="appearance-none block w-full mt-4 bg-gray-200  text-gray-700 rounded border py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                        id="grid-first-name" type="text" placeholder="Phone  ">
+
+                    <textarea id="message" rows="10"
+                        class="appearance-none block w-full mt-4 bg-gray-200  text-gray-700 rounded border py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                        placeholder="Message..."></textarea>
+                    <button
+                        class="bg-trannparent hover:bg-[#00AAED] hover:text-white duration-500 rounded-md mt-6 w-full h-12 hover:border-none text-black border-2 border-gray-200">
+                        Send
+                    </button>
+                </div>
+            </div>
+            <div id="myButton"></div </div>
+    </section>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#myButton').floatingWhatsApp({
+                phone: '03074032148',
+                popupMessage: 'HELLO, HOW CAN I HELP YOU?',
+                showPopup: true,
+                showOnIE: false,
+                headerTitle: 'Welcome!',
+                headerColor: 'green',
+                backgroundColor: 'crimson',
+                buttonImage: '<img src="whatsapp.svg" />',
+                position: "right",
+            });
+        });
+    </script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
