@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="floating-wpp.css">
     <script type="text/javascript" src="floating-wpp.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 
@@ -16,7 +17,7 @@
 
     <nav class="nav flex items-center " id="navbar">
         <div class="logo">
-            <img src="./img/logo.svg" class="w-56 opacity-50" alt="">
+            <a href="./index.html"><img src="./img/logo.svg" class="w-56 opacity-50" alt=""></a>
         </div>
         <div class="links">
             <ul class="ul opacity-50">
@@ -72,8 +73,7 @@
         </div>
     </div>
     </div>
-
-
+    <!-- Portfolio -->
     <section class="Portfolio">
         <div class="mt-40 flex justify-center flex-col">
             <div class="text-center">
@@ -121,7 +121,8 @@
 
                 </div>
             </div>
-            <div id="myButton"></div>
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" id="myButton">
+            </div>
         </div>
     </section>
     <script type="text/javascript">
@@ -140,6 +141,11 @@
         });
     </script>
     <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

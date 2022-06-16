@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="floating-wpp.css">
     <script type="text/javascript" src="floating-wpp.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 
@@ -17,7 +18,7 @@
     <!-- Navbar -->
     <nav class="nav flex items-center " id="navbar">
         <div class="logo">
-            <img src="./img/logo.svg" class="w-56 opacity-50" alt="">
+            <a href="./index.html"><img src="./img/logo.svg" class="w-56 opacity-50" alt=""></a>
         </div>
         <div class="links">
             <ul class="ul opacity-50">
@@ -79,20 +80,27 @@
         <div
             class="bg-[url(/img/ahmad.jpg)] bg-[#282A46] relative h-screen w-full bg-center bg-no-repeat bg-cover object-cover flex items-end p-12">
             <div class="text-white">
-                <h1 class="lg:text-5xl text-3xl opacity-50">Hey meet</h1>
-                <h1 class="font-black lg:text-8xl text-6xl mt-4 opacity-50">AHMAD</h1>
-                <h1 class="lg:text-5xl text-3xl mt-4">an expert in Graphics, <br />Animations, Video
+                <h1 class="lg:text-5xl text-3xl opacity-50" data-aos="fade-right" data-aos-duration="1000">Hey meet</h1>
+                <h1 class="font-black lg:text-8xl text-6xl mt-4 opacity-50" data-aos="fade-right"
+                    data-aos-duration="2000">AHMAD</h1>
+                <h1 class="lg:text-5xl text-3xl mt-4" data-aos="fade-right" data-aos-duration="1000">an expert in
+                    Graphics, <br />Animations, Video
                     editing<br />and
                     UI/UX Designing
                 </h1>
                 <div class="flex mt-8 gap-6">
-                    <img src="/img/ai.svg" alt="Adobe Illustrator" class="lg:w-20 w-16">
-                    <img src="/img/ps.svg" alt="Photoshop" class="lg:w-20 w-16">
-                    <img src="/img/ae.svg" alt="After effects" class="lg:w-20 w-16">
-                    <img src="/img/figma.svg" alt="Figma" class="lg:w-20 w-16">
+                    <img data-aos="fade-right" data-aos-duration="2000" src="/img/ai.svg" alt="Adobe Illustrator"
+                        class="lg:w-20 w-16">
+                    <img data-aos="fade-right" data-aos-duration="2000" src="/img/ps.svg" alt="Photoshop"
+                        class="lg:w-20 w-16">
+                    <img data-aos="fade-right" data-aos-duration="2000" src="/img/ae.svg" alt="After effects"
+                        class="lg:w-20 w-16">
+                    <img data-aos="fade-right" data-aos-duration="2000" src="/img/figma.svg" alt="Figma"
+                        class="lg:w-20 w-16">
                 </div>
             </div>
-            <div id="myButton"></div>
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" id="myButton">
+            </div>
         </div>
     </section>
 
@@ -114,5 +122,9 @@
     });
 </script>
 <script src="./app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
