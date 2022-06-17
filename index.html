@@ -11,10 +11,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body class="scroll-smooth">
-    <!-- <div class="relative"> -->
     <!-- Navbar -->
     <nav class="nav flex items-center " id="navbar">
         <div class="logo">
@@ -34,13 +40,11 @@
                             d="M4.16667 0C3.0616 0 2.00179 0.442499 1.22039 1.23015C0.438987 2.0178 0 3.08609 0 4.2V4.6221L12.5 11.4072L25 4.6242V4.2C25 3.08609 24.561 2.0178 23.7796 1.23015C22.9982 0.442499 21.9384 0 20.8333 0H4.16667ZM25 7.0077L12.9938 13.524C12.842 13.6063 12.6723 13.6494 12.5 13.6494C12.3277 13.6494 12.158 13.6063 12.0062 13.524L0 7.0077V16.8C0 17.9139 0.438987 18.9822 1.22039 19.7698C2.00179 20.5575 3.0616 21 4.16667 21H20.8333C21.9384 21 22.9982 20.5575 23.7796 19.7698C24.561 18.9822 25 17.9139 25 16.8V7.0077Z"
                             fill="white" />
                     </svg>
-
                     <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
                     </svg>
                     <span class="text-white">Hire me</span>
                 </button></a>
         </div>
-
         <div class="burger-icon" id="menu-button">
             <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke="currentColor"
                 stroke-width="2">
@@ -79,33 +83,34 @@
     <section class="banner">
         <div
             class="bg-[url(/img/ahmad.jpg)] bg-[#282A46] relative h-screen w-full bg-center bg-no-repeat bg-cover object-cover flex items-end p-12">
+            <div class="absolute">
+                <canvas id="canvas"></canvas>
+            </div>
             <div class="text-white">
-                <h1 class="lg:text-5xl text-3xl opacity-50" data-aos="fade-right" data-aos-duration="1000">Hey meet</h1>
-                <h1 class="font-black lg:text-8xl text-6xl mt-4 opacity-50" data-aos="fade-right"
-                    data-aos-duration="2000">AHMAD</h1>
-                <h1 class="lg:text-5xl text-3xl mt-4" data-aos="fade-right" data-aos-duration="1000">an expert in
-                    Graphics, <br />Animations, Video
-                    editing<br />and
-                    UI/UX Designing
-                </h1>
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <h1 class="lg:text-5xl text-3xl opacity-50">Hey meet</h1>
+                    <h1 class="font-black lg:text-8xl text-6xl mt-4 opacity-50">AHMAD</h1>
+                    <h1 class="lg:text-5xl text-3xl mt-4 opacity-75">an expert in
+                        Graphics, <br />Animations, Video
+                        editing<br />and
+                        UI/UX Designing
+                    </h1>
+                </div>
                 <div class="flex mt-8 gap-6">
-                    <img data-aos="fade-right" data-aos-duration="2000" src="/img/ai.svg" alt="Adobe Illustrator"
-                        class="lg:w-20 w-16">
-                    <img data-aos="fade-right" data-aos-duration="2000" src="/img/ps.svg" alt="Photoshop"
-                        class="lg:w-20 w-16">
-                    <img data-aos="fade-right" data-aos-duration="2000" src="/img/ae.svg" alt="After effects"
-                        class="lg:w-20 w-16">
-                    <img data-aos="fade-right" data-aos-duration="2000" src="/img/figma.svg" alt="Figma"
-                        class="lg:w-20 w-16">
+                    <img src="/img/ai.svg" alt="Adobe Illustrator" class="lg:w-20 w-16">
+                    <img src="/img/ps.svg" alt="Photoshop" class="lg:w-20 w-16">
+                    <img src="/img/ae.svg" alt="After effects" class="lg:w-20 w-16">
+                    <img src="/img/figma.svg" alt="Figma" class="lg:w-20 w-16">
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" id="myButton">
             </div>
+            <div>
+            </div>
         </div>
+
     </section>
-
 </body>
-
 <script type="text/javascript">
     $(function () {
         $('#myButton').floatingWhatsApp({
